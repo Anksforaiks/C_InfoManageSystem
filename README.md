@@ -18,3 +18,7 @@ A simple staff information management system used for school work
   - 包括增删改查和薪资相关的函数
 - staff_info.dat：职工数据存储形式
 - user_info.dat：用户数据存储形式
+- student_info_manage_system.c：一个极其简单的学生管理系统，只有最基本增删改查和读取保存的功能
+
+## 提醒
+仓库中的代码未经大量测试，很可能存在BUG，仅作为学习参考，使用时请注意！
