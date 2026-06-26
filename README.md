@@ -12,7 +12,9 @@ A simple staff information management system used for school work
 * 4.针对特定系统的要求：比如职工信息管理系统通常会要求薪资信息
 
 ## 文件内容
-- staff_info_manage_system.c：
+- **staff_info_manage_system.c**：
   - 分为管理员，职工，经理三种角色；
   - 数据文件读写使用两个文件staff_info.dat和user_info.dat；
   - 包括增删改查和薪资相关的函数
+- staff_info.dat：职工数据存储形式
+- user_info.dat：用户数据存储形式
