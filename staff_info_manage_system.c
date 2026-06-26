@@ -545,7 +545,7 @@ void check_salary(Staff* head,User* self){
 					   s->year,
 					   s->month,
 					   s->base,
-					   s->base,
+					   s->bonus,
 					   s->tax,
 					   s->total);
 				s=s->next;
@@ -654,7 +654,7 @@ Staff* add_staff(Staff* head, int *len) {
 		f = 1; // 标记是否允许插入
 		// 1. 输入 ID 并查重
 		printf("请输入职工工号: ");
-		scanf("%s", temp_id); // ID通常无空格，用%s较安全，或者用fgets
+		scanf("%10s", temp_id);
 		clear(); // 清除换行符
 		for (p = head; p != NULL; p = p->next) {
 			if (strcmp(temp_id, p->id) == 0) {
@@ -987,7 +987,7 @@ void statistics_staff(Staff* head,int len) {
 		}else if(CURRENT_YEAR-p->hire_date.year>=3){
 			senior_num++;
 		}
-		total_salary+=p->gain->total;
+		if(p->gain!=NULL) total_salary+=p->gain->total;
 		p=p->next;
 	}
 	printf("\n职工统计结果如下：\n");
